@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<resources>
+    
+    <Resource id="MyDataSourceDerby" type="javax.sql.DataSource">
+  JdbcDriver org.apache.derby.jdbc.ClientDriver
+  JdbcUrl jdbc:derby://localhost:1527/gggg
+  UserName gggg
+  Password gggg
+  JtaManaged true
+</Resource>
+
+
+<Resource id="MyDataSourceDerbylNonJTA" type="javax.sql.DataSource">
+  JdbcDriver org.apache.derby.jdbc.ClientDriver
+  JdbcUrl jdbc:derby://localhost:1527/gggg
+  UserName gggg
+  Password gggg
+  JtaManaged false
+</Resource>
+
+
+    
+</resources>
